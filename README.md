@@ -23,4 +23,4 @@ _✨ 基于NoneBot2实现的 获取LOL英雄背景故事 插件 ✨_
 
  - 效果如图所示
  
-![效果如图所示](data/yasuo.jpg)
+![效果如图所示](https://raw.githubusercontent.com/cjladmin/lolheroes/main/lolheroes/data/yasuo.jpg)
