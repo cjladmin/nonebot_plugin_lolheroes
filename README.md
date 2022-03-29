@@ -1,7 +1,3 @@
-<p align="center">
-  <a href="https://v2.nonebot.dev/"><img src="https://avatars.githubusercontent.com/u/53791401?v=4" width="200" height="200" alt="nonebot"></a>
-</p>
-
 <div align="center">
 
 # LOLHeroes
