@@ -1,32 +1,31 @@
 # -*- codeing -*-
 # @Time : 2021/11/15 0:14
 # @Author : Torres-圣君
-# @File : __init__.py
+# @File : clockin.py
 # @Sofaware : PyCharm
 from nonebot.plugin import on_regex
-from nonebot.adapters.cqhttp import Bot, Event
 from nonebot.adapters.cqhttp.message import Message
+from nonebot.adapters.onebot.v11 import Bot, Event, Message
 import requests
 import json
 
+test = on_regex(r".*(lol).*(背景故事).*", priority=10)
 
-# 发送'lolxxx背景故事'，例：lol亚索背景故事
-test = on_regex(r".*(lol).*(背景故事).*", priority=49)
 
 @test.handle()
 async def _(bot: Bot, event: Event):
     msg = str(event.get_message()).strip("lol背景故事 ")
     try:
-        with open(r"data\heroesID.json", "r", encoding='utf-8') as r:
+        with open(r"C:\Users\Administrator\PycharmProjects\qqRobot\torres\src\plugins\lolheros\herosID.json", "r",
+                  encoding='utf-8') as r:
             json_data = json.load(r)
             name_url = json_data[msg]
             hero_url = json_data[msg].split("/")
-            # 获取英雄对应的英文名
             hero_en = hero_url[-2]
         title_name = hero_en.title()
         photo = f'[CQ:image,file=https://game.gtimg.cn/images/lol/universe/v1/assets/images/champion/splash/{title_name}_0.jpg]'
         await test.finish(message=Message((photo + run(hero_en) +
-                                           "\n——————————————————————\n" +
+                                           "\n———————————————————————\n" +
                                            msg + "更多内容请点击：\n" +
                                            name_url)))
     except Exception:
