@@ -4,7 +4,6 @@
 # @File : clockin.py
 # @Sofaware : PyCharm
 from nonebot.plugin import on_regex
-from nonebot.adapters.cqhttp.message import Message
 from nonebot.adapters.onebot.v11 import Bot, Event, Message
 import requests
 import json
