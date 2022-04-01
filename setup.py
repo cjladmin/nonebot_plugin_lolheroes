@@ -16,7 +16,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3'
+    python_requires='>=3',
     install_requires=[
         "requests>=2.26.0",
         "nonebot2>=2.0.0b2",
