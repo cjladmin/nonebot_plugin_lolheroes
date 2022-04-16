@@ -4,34 +4,24 @@
 
 <div align="center">
 
-# Monitor_Groups
+# LOLHeroes
 
-_✨ 基于NoneBot2实现的 监测QQ群事件 插件 ✨_
+_✨ 基于NoneBot2实现的 获取LOL英雄背景故事 插件 ✨_
 
 </div>
 
-## 具体功能：
- - 监测群组的以下变动事件：
-     - 群成员增加、减少时，自动发送通知
-     - 群管理变更时，自动发送通知
-     - 被其他成员戳一戳时，自动回复
-     - 群成员上传文件时，自动发送通知
-     - 群红包被抢完时，自动发送红包运气王
-     - 群成员荣誉变更时，发送变更通知(测试时没反应QwQ)
-
-
 ## 配置说明：
 
-> 1.把下载后的文件夹`nonebot_plugin_monitoring`放在`src/plugins/`目录下
+> 1.把下载后的文件夹放在`src/plugins/`路径下
 
-> 2.修改`admin.py`
-> > bot_qq：改为机器人的QQ号
-> > super_qq：添加或新增管理员的QQ号
+> 2.在`bot.py`文件内添加：`nonebot.load_plugin("lolheroes")`
 
-> 3.修改`chuoyichuo.py`
+## 使用说明：
+
+> 直接在群内/私聊发送：
 >
-> > bot_name：设置机器人的昵称
+> > lol亚索/疾风剑豪背景故事
 
-> 4.修改`rongyu.py`
-> > bot_qq：改为机器人的QQ号
-> > super_qq：添加或新增管理员的QQ号
+ - 效果如图所示
+
+![效果如图所示](lolheroes/data/yasuo.jpg)
