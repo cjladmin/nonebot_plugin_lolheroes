@@ -4,7 +4,7 @@
 
 <div align="center">
 
-# LOLHeroes
+# nonebot_plugin_lol-Heroes
 
 _✨ 基于NoneBot2实现的 获取LOL英雄背景故事 插件 ✨_
 
